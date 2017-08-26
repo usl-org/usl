@@ -1,1 +1,8 @@
+<-  types:
+      domain: language
 
+-> 
+  domain: new -> 
+    name: .usl, type: language
+    
+def <- domain.language: compilers[C++], 
