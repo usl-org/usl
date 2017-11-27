@@ -1,2 +1,2 @@
-# .USL
+#USL
 Universal Service Language

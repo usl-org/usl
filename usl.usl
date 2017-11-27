@@ -1,8 +1,21 @@
-<-  types:
-      domain: language
-
--> 
-  domain: new -> 
-    name: .usl, type: language
-    
-def <- domain.language: compilers[C++], 
+#%USL 0.1
+---
+project:
+  title: usl
+  version: v0.1.1
+  description: |
+    USL is an opinionated open source descriptive language.
+  types:
+    domain: !include types/domain.usl
+    service: !include types/service.usl
+    action: !include types/action.usl
+    rule: !include types/rule.usl
+    event: !include types/event.usl
+    component: !include types/component.usl
+    store: !include types/store.usl
+    test:  !include types/test.usl
+    insight: !include types/insight.usl
+domain:
+  type: dns
+    title: usl
+    baseUri:
